@@ -28,6 +28,7 @@ requirements:
     - {{ compiler('cuda') }}  # [linux]
     - cmake
     - make
+    - python_abi
   host:
     - python
     - pip
@@ -35,6 +36,7 @@ requirements:
     - openmm
     - dlpack >=0.5
     - pybind11
+    - python_abi
   run:
     - python
     - {{ pin_compatible('openmm', max_pin='x.x') }}
