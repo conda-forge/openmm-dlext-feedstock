@@ -12,7 +12,7 @@ source:
 
 build:
   number: 2
-  skip: true  # [(win) or (cuda_compiler_version in (undefined, 'None') and (linux))]
+  skip: true  # [(win) or (cuda_compiler_version in (undefined, 'None') and linux) or (osx and py==36)]
   rpaths:
     - lib/
 
@@ -28,7 +28,6 @@ requirements:
     - {{ compiler('cuda') }}  # [linux]
     - cmake
     - make
-    - python_abi
   host:
     - python
     - pip
@@ -36,7 +35,6 @@ requirements:
     - openmm
     - dlpack >=0.5
     - pybind11
-    - python_abi
   run:
     - python
     - {{ pin_compatible('openmm', max_pin='x.x') }}
