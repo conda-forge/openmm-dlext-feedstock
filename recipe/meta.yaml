@@ -13,8 +13,7 @@ source:
 
 build:
   number: 9
-  skip: true  # [python_impl == "pypy"]
-  skip: true  # [(win) or (cuda_compiler_version in (undefined, 'None') and linux) or ((cuda_compiler_version != '10.2') and (ppc64le))]
+  skip: true  # [(win) or (cuda_compiler_version in (undefined, 'None') and linux)]
   missing_dso_whitelist:
     - "*/libcuda.*"    # [linux]
     - "*/libOpenCL.*"  # [unix]
