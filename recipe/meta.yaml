@@ -37,6 +37,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - swig
     - openmm
     - dlpack >=0.5
