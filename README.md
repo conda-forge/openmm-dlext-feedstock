@@ -222,5 +222,5 @@ Feedstock Maintainers
 =====================
 
 * [@nrouizem](https://github.com/nrouizem/)
-* [@pabloferz](https://github.com/pabloferz/)
+* [@p-zubieta](https://github.com/p-zubieta/)
 
