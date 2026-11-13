@@ -2,7 +2,7 @@ github:
   branch_name: main
   tooling_branch_name: main
 conda_forge_output_validation: true
-azure:
-  store_build_artifacts: true
 conda_build:
   pkg_format: '2'
+workflow_settings:
+  store_build_artifacts: true
